@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { loadLogin, logOut } from "..//redux/actions/actionAuth";
 
 import "./styles.css";
-import  logo  from './logo_jazzteam.png'
+import logo from "./logo_jazzteam.png";
 function Main({ history }) {
   const dispatch = useDispatch();
   const { auth } = useSelector((state) => state.auth);
@@ -31,7 +31,7 @@ function Main({ history }) {
               ) : null}
               {getAuthorized && auth !== true ? (
                 <li>
-                  <Link  to="/login">Login</Link>
+                  <Link to="/login">Login</Link>
                 </li>
               ) : null}
               <li>
@@ -39,19 +39,26 @@ function Main({ history }) {
               </li>
               {getAuthorized && auth === true ? (
                 <li>
-                  <Link to="/profile">{data ? `Profile ${data.data[0].firstName}` : null}</Link>
+                  <Link to="/profile">
+                    {data ? `Profile ${data.data[0].firstName}` : null}
+                  </Link>
                 </li>
               ) : null}
               <li>
                 <Link to="/">Main</Link>
               </li>
+              {getAuthorized && auth === true ? (
+                <li>
+                  <Link to="/calendar">Calendar</Link>
+                </li>
+              ) : null}
             </ul>
           </nav>
         </div>
-          <div className="wrapper__welcome-container">
-                <img src={logo} alt="logo-image"></img>
-                <p>Тестовое задание для JazzTeam</p>
-          </div>
+        <div className="wrapper__welcome-container">
+          <img src={logo} alt="logo-image"></img>
+          <p>Тестовое задание для JazzTeam</p>
+        </div>
       </div>
     </>
   );

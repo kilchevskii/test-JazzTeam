@@ -3,6 +3,7 @@ import './styles.css'
 import { Form, Input, Button, Layout, Row, Col, Card } from "antd";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
 import { useDispatch, useSelector } from "react-redux";
+import { getAuthorized, logout } from "..//..//App/helpers/helpers";
 import { loadLogin } from "..//redux/actions/actionAuth";
 const { Footer, Content } = Layout;
 const SignIn = ({ history }) => {
@@ -11,13 +12,13 @@ const SignIn = ({ history }) => {
   const [error, setError] = useState('')
   const onFinish = (values) => {
     dispatch(loadLogin({ data: values, history }));
-    if (auth === false) {
+    if (getAuthorized || auth === false) {
       setError('Incorrect password or email')
     }
   };
+  console.log(auth);
 
   return (
-    <Content>
       <Row justify="center">
         <Col>
           <Card
@@ -72,7 +73,6 @@ const SignIn = ({ history }) => {
           </Card>
         </Col>
       </Row>
-    </Content>
   );
 };
 

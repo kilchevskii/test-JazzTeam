@@ -1,7 +1,6 @@
 .ant-card.ant-card-bordered {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: -445px;
     transform: translate(-50%, -50%);
     margin-top: 0;
     width: auto;
@@ -11,11 +10,6 @@
     background: bisque;
     border-radius: 8px;
 }
-.ant-card-body {
-    height: 210px;
-    width: 300px;
-}
-
 #normal_login_login, #normal_login_password {
     width: 85%;
     border-radius: 5px;

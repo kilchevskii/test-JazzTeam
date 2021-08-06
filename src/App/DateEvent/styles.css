@@ -1,0 +1,38 @@
+@import '~antd/dist/antd.css';
+
+.events {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .events .ant-badge-status {
+    width: 100%;
+    overflow: hidden;
+    font-size: 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .notes-month {
+    font-size: 28px;
+    text-align: center;
+  }
+  .notes-month section {
+    font-size: 28px;
+  }
+
+  .ant-picker-calendar.ant-picker-calendar-full {
+    position: absolute;
+    top: 10%;
+    width: 80%;
+    padding: 15px;
+    border: 1px solid #0093dd;
+}
+
+  .ant-picker-calendar-full .ant-picker-panel {
+      padding: 10px;
+  }
+
+  .wrapper__calendar {
+      display: flex;
+      justify-content: center;
+  }
