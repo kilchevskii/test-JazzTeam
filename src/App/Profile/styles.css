@@ -1,0 +1,28 @@
+.wrapper__personal-data {
+  display: block;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: antiquewhite;
+  border-radius: 30px;
+}
+
+.wrapper__personal-data-block {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 18px;
+    color: #690094;
+}
+
+.wrapper__personal-data-block img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}

@@ -1,0 +1,78 @@
+.ant-card.ant-card-bordered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 0;
+    width: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: bisque;
+    border-radius: 8px;
+}
+.ant-card-body {
+    height: 210px;
+    width: 300px;
+}
+
+#normal_login_login, #normal_login_password {
+    width: 85%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 7px 15px;
+}
+
+.ant-col.ant-form-item-control {
+    margin-bottom: 10px;
+    position: relative;
+}
+.ant-input-prefix {
+    padding: 7px;
+}
+.ant-card-head-title {
+    margin-bottom: 40px;
+}
+
+.ant-btn.ant-btn-primary.login-form-button {
+    margin-left: 140px;
+    width: 145px;
+    height: 35px;
+    border-radius: 5px;
+    border-color: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.ant-card-head-title h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.ant-btn.ant-btn-primary.login-form-button:hover {
+    background-color: #f1c7ae;
+}
+
+.ant-form-item-control-input {
+    position: relative;
+}
+
+
+.ant-form-item-explain.ant-form-item-explain-error {
+    color: #ff7272;
+    position: absolute;
+    top: 10%;
+    right: 20px;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.validate {
+    color: red;
+    font-size: 13px;
+    position: absolute;
+    top: 50px;
+    left: 65px;
+}

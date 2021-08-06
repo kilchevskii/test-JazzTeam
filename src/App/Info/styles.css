@@ -1,0 +1,7 @@
+.wrapper__others-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 600px;
+    transform: translate(-50%, -50%);
+}

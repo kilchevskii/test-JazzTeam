@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "login": "admin",
+      "password": "12345678",
+      "firstName": "Vladislav",
+      "lastName": "Kilchevskii",
+      "authorized": true,
+      "avatar": "./avatar.jpg",
+      "technologies": "JavaScript, React, Redux, HTML, CSS, SASS, Bootstrap, Markdown, Ant Design, Material UI, npm, Prettier, ESLint"
+    }
+  ]
+}
