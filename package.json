@@ -26,7 +26,7 @@
     "server": "node server.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "fake-json": "json-server ./src/assets/db.json --watch --port 3001",
+    "fake-json": "json-server ./public/data.json --watch --port 3001",
     "deploy": "gh-pages -d build",
     "predeploy": "npm run build"
   },
