@@ -1,6 +1,6 @@
 import { call, put, takeEvery } from "redux-saga/effects";
 import axios from "axios";
-const apiUrl = "http://localhost:3001/users";
+const apiUrl = "/users";
 const postLogin = async (data) => {
   return await axios.get(apiUrl, data);
 };
